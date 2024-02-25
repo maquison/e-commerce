@@ -1,20 +1,20 @@
 'use client'
 
 import { useRouter } from "next/navigation";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function Product() {
   const router = useRouter()
 
   return (
     <>
-      Produto
-      <br />
-      <div className="flex flex-col w-full h-screen items-center justify-center">
-        <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" type="button" onClick={() => router.push('/')}>
-          Voltar
-        </button>
+      <div className="flex flex-col h-screen overflow-hidden">
+        <main className="flex-1 overflow-y-scroll">
+          <Navbar />
+        </main>
+        <Footer></Footer>
       </div>
     </>
-
   );
 }

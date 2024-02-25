@@ -25,7 +25,7 @@ export default function Home() {
             <Card></Card>
             <Card></Card>
           </div>
-          <div className="grid grid-cols-4 gap-4 pt-10 px-10">
+          <div className="grid grid-cols-4 gap-4 pt-10 px-10 pb-52">
             <Card></Card>
             <Card></Card>
             <Card></Card>
